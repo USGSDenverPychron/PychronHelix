@@ -1,0 +1,59 @@
+actions:
+- action: null
+  analysis_types: []
+  attr: ''
+  frequency: 1
+  mapper: ''
+  ntrips: 1
+  start_count: 0
+  teststr: ''
+  window: 0
+cancelations:
+- analysis_types: []
+  attr: ''
+  frequency: 1
+  mapper: ''
+  ntrips: 1
+  start_count: 0
+  teststr: ''
+  window: 0
+modifications:
+- action: Skip Next Run
+  analysis_types: []
+  attr: ''
+  extraction_str: ''
+  frequency: 1
+  mapper: ''
+  nskip: 0
+  ntrips: 1
+  start_count: 0
+  teststr: ''
+  use_termination: false
+  use_truncation: false
+  window: 0
+post_run_terminations:
+- attr: L2(CDD)
+  teststr: L2(CDD).deflection==3250
+pre_run_terminations:
+- attr: L2(CDD)
+  teststr: L2(CDD).inactive
+- attr: L2(CDD)
+  teststr: L2(CDD).deflection==3250
+terminations:
+- analysis_types: []
+  attr: L2(CDD)
+  frequency: 10
+  mapper: ''
+  ntrips: 1
+  start_count: 5
+  teststr: L2(CDD).deflection==3250
+  window: 0
+truncations:
+- analysis_types: []
+  attr: ''
+  frequency: 1
+  mapper: ''
+  ntrips: 1
+  start_count: 0
+  teststr: ''
+  window: 0

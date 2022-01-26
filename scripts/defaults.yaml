@@ -1,0 +1,81 @@
+#script defaults file
+#defines default pyscripts for the analysis types
+#this yaml file returns a dictionary of dictionaries
+#.py does not have to be included for graphic clarity.
+Bg:
+ extraction: static.py
+ measurement: analysis400_120
+ post_equilibration:
+ post_measurement: pump_ms
+Ba:
+ extraction: air_x1_boneonly
+ measurement: analysis340_60_no_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+ modifier: 03
+Bc:
+ extraction: cocktail_x1
+ measurement: analysis340_60_no_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+ modifier: 03
+Bu:
+ measurement: analysis340_60_no_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+ FusionsDiode:
+   cleanup: 30
+   duration: 30
+   extraction: diode
+Be:
+ extraction: diode
+ measurement: analysis340_60_no_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+A:
+ extraction: air_x1_boneonly
+ measurement: analysis340_60_CDD_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+ modifier: 03
+C:
+ extraction: cocktail_x1
+ measurement: analysis340_60_no_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+ modifier: 03
+U:
+ extraction: diode
+ measurement: analysis340_60_CDD_center
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+Dg:
+ extraction: degas
+ measurement:
+ post_equilibration:
+ post_measurement:
+AP:
+ extraction: apis_air1
+ measurement: analysis400_120
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+BAP:
+ extraction: apis_air1
+ measurement: analysis400_120
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+BAC:
+ extraction: apis_ac1
+ measurement: analysis400_120
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+BFC:
+ extraction: apis_fc1
+ measurement: analysis400_120
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
+Ic:
+ extraction: air_x1
+ measurement: ic_peak_hop
+ post_equilibration: pump_extraction_line
+ post_measurement: pump_ms
